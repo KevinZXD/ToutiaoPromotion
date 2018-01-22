@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" class="feedback">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>问题反馈</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/feedback.css" />
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="question/subquestion.js"></script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<button onclick="jumpTo()" class="mui-btn mui-btn-blue mui-btn-link mui-pull-right">发送</button>
+			<h1 class="mui-title">网友问答</h1>
+		</header>
+		<label id="user_id" hidden=true></label>
+		<label id="user_name" hidden=true></label>
+		<div class="mui-content">
+			<div class="mui-content-padded">
+				<div class="mui-inline">问题阐述</div>
+				
+				<!--快捷输入具体内容，开发者可自己替换常用语-->
+				
+			</div>
+			<div class="row mui-input-row">
+				<textarea id="question" class="mui-input-clear question" placeholder="请详细描述你的问题和意见..."></textarea>
+			</div>
+				<p>QQ/邮箱</p>
+			<div class="mui-input-row">
+				<input id="contact" type="text" class="mui-input-clear contact" placeholder="(选填,方便我们联系你 )" />
+			</div>
+		
+		</div>
+		<script src="js/mui.min.js"></script>
+	
+	
+	</body>
+
+</html>

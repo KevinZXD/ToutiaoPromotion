@@ -1,0 +1,436 @@
+@media screen {
+
+
+    /* b-topsearch */
+    .b-topsearch {
+        position: absolute;
+        top: 45px;
+        right: 0;
+    }
+
+    .b-topsearch input,
+    .b-topsearch select {
+        margin-bottom: 0;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        font-size: 12px;
+        vertical-align: middle;
+    }
+
+    .b-topsearch select {
+        height: 26px;
+    }
+
+    .b-topsearch button {
+        vertical-align: middle;
+    }
+
+    .b-topsearch button span {
+        display: none;
+    }
+
+
+    /*------------------------------------------------------------
+    * 组件
+    */
+    .u-img-articles .uia-img {
+        float: left;
+        margin-right: 20px;
+    }
+
+    .uia-img img {
+        width: 174px;
+    }
+
+    .u-img-articles .uia-body {
+        line-height: 170%;
+    }
+
+    .u-img-articles .uia-body p {
+        text-indent: 28px;
+    }
+
+
+    /* u-unithead / u-unitlist */
+    .u-unithead {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .u-unitlist {
+        color: #333;
+    }
+
+    .u-unitlist li {
+        list-style-image: url(../images/lii.gif);
+    }
+    
+    .u-unitlist li a {
+        font-size: 12px;
+        color: #004098;
+    }
+    /* u-unithead / u-unitlist */
+    .d-unithead {
+		background:#F0F0F0;
+		text-align:center;
+		padding:6px;
+		margin:6px 0;
+        font-weight: normal;
+        font-size: 14px;
+		color:#696969;
+        line-height: normal;
+		background-position:center;
+    }
+
+    .d-unitlist {
+        color: #333;
+    }
+
+    .d-unitlist li {
+		line-height:36px;
+		height:36px;
+		width:210px;
+		float:left;
+        list-style-image: url(../images/lii.gif);
+    }
+    
+    .d-unitlist li a {
+        font-size: 12px;
+        color: #004098;
+    }
+	
+	
+	.f-unithead {
+		background:#F0F0F0;
+		text-align:center;
+		padding:6px;
+		margin:6px 0;
+        font-weight: normal;
+        font-size: 14px;
+		color:#696969;
+        line-height: normal;
+		background-position:center;
+    }
+
+    .f-unitlist {
+        color: #333;
+    }
+
+    .f-unitlist li {
+		line-height:36px;
+		height:36px;
+		width:160px;
+		float:left;
+        list-style-image: url(../images/lii.gif);
+    }
+    
+    .f-unitlist li a {
+        font-size: 12px;
+        color: #004098;
+    }
+
+	/*搜索*/
+	 .s-topsearch {
+        top: 45px;
+		text-align:center;
+        right: 0px;
+    }
+	.s-topsearch input{
+		width:300px;}
+    .s-topsearch input,
+    .s-topsearch select {
+        margin-bottom: 0;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        font-size: 12px;
+        vertical-align: middle;
+    }
+
+    .s-topsearch select {
+        height: 26px;
+    }
+
+    .s-topsearch button {
+		padding:4px 20px;
+        vertical-align: middle;
+    }
+
+    .s-topsearch button span {
+        display: none;
+    }
+	
+	/*    新增   */
+	.texted{
+		text-indent:28px;
+		line-height:24px;
+		padding-bottom:10px;}
+	.texttitle{
+		color:#999;}
+	.red{
+		color:#F00;
+		padding-left:5px;}
+		
+	.boxx {
+		width: 1025px;
+		height: 356px;
+		margin: 0px auto;
+		overflow: hidden;
+		position: relative;
+}
+#slide {
+position: relative;
+width: 1025px;
+height: 356px;
+margin-bottom: 20px;
+}
+
+/*============问答==============*/
+.boardBbs{
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:20px;
+	background-color: #FFF;
+	border: 1px solid #DDD;
+	border-radius: 4px;
+	overflow:hidden;
+}
+.answersBbs{
+	float:left;
+	width:100%;
+	line-height:30px;
+	font-size:14px;}
+.answersTitle{
+	font-weight:bold;}
+.answersMain{
+	text-indent:28px;}
+.answersXX{
+	text-align:center;
+	padding-top:20px;
+	height:auto;
+	line-height:30px;
+	overflow:hidden;
+	list-style:none;}
+.answersXX ul{
+	padding:0;
+	margin:0;
+	list-style:none;}
+.answersXX ul li{
+	line-height:30px;
+	float:left;
+	padding-left:20px;
+	padding-right:20px;
+	color:#999;
+	}
+.answersXX ul li span{
+	color:#CCC;
+	padding-right:6px;
+	}
+.lineBbs{border-right:1px solid #EFEFEF;}
+.answersDaty{
+	display:inline;
+	font-style:normal;
+	float:right;
+	border:0;}
+.questionsBbs{
+	margin-top:20px;
+	padding:10px;
+	background-color: #F2F2F5;
+	border-radius: 4px;
+	overflow:hidden;
+}
+
+.answersXXA ul{
+	padding:0;
+	margin:0;
+	list-style:none;}
+.answersXXA ul li{
+	float:right;
+	padding-left:20px;
+	padding-right:20px;
+	color:#999;
+	}
+.answersXXA ul li span{
+	color:#CCC;
+	padding-right:6px;
+	}
+/* ==============百叶窗效果==============*/
+.ice-slideshow-default { 
+	position:relative;
+	overflow:hidden;
+	padding:0; 
+	width:auto; 
+	height:auto;}
+	
+	.ice-slideshow-default li {
+		list-style-type:none!important;	}
+	
+
+
+.ice-slideshow-default .ice-main-wapper{ 
+	overflow:hidden;
+	z-index:6;
+    position:relative}
+	
+	.ice-slideshow-default .ice-main-wapper .ice-main-item { 
+		overflow:hidden;
+		padding:0px;
+		margin:0px; 
+		height:100%;
+		background:#fff;
+		width:100%;
+		position:absolute;}
+		
+		.ice-slideshow-default .ice-main-wapper .ice-main-item .ice-description {
+			position:absolute;
+			z-index:5;
+			bottom:0;
+			width:98%;
+			color:#fff;
+			/*background:#101010;*/
+			-moz-background:rgba(0,0,0,0.7);
+			-moz-transition: all .3s ease-out;
+			-o-transition: all .3s ease-out;
+			-webkit-transition: all .3s ease-out;
+			-ms-transition: all .3s ease-out;
+			transition: all .3s ease-out;
+			padding:10px 2% 0;
+			font-size:1.2em;}
+
+			.ice-slideshow-default .ice-main-wapper .ice-main-item h3.ice-title { 
+				clear:none;
+				font-size:1.5em;
+				color:#fff;
+				margin:0 0 3px;}
+					
+					.ice-slideshow-default .ice-main-wapper .ice-main-item a {
+						color:#fff;
+						text-decoration:none;} 
+
+
+			
+			
+/* Navigator 
+the small rentangles that tells how many slides are */
+.ice-slideshow-default  ul.ice-navigator { 
+	position:absolute;
+	
+	left:auto!important;
+	padding:0; 
+	margin:0;
+	z-index:7;
+	right: 15px;
+    bottom: 15px;
+	}
+	
+	.ice-slideshow-default  ul.ice-navigator li { 
+		
+	border-radius: 5px;
+    display: block;
+    float: left;
+   
+    margin-left: 5px;
+  
+	cursor: pointer;
+    font-size: 10px;
+    height: 20px;
+    text-align: center;
+    text-indent: 0;
+    width: 20px;
+	background-color:#fff;
+		
+		}
+	
+		.ice-slideshow-default  ul.ice-navigator li:hover,
+		.ice-slideshow-default  ul.ice-navigator li.active {
+			background:#FC4C03;
+			color:#fff;
+			}	 
+		
+								
+			.ice-slideshow-default .ice-navigator li span.ice-title {
+				display:none; }
+				 
+					
+					
+
+/* begin the ajax loading and display the slideshow only when all images are load */
+.ice-slideshow-default .preload {
+	height:100%;
+	width:100%;
+	background:url(images/loading.gif) no-repeat scroll 49% 49% #E9E9E9;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:8}	
+		
+		
+/* a nice moving bar on the bottom of the slideshow */
+.ice-slideshow-default  .ice-proccessbar {  
+	width:100%; 
+	height:4px; 
+	position:absolute; 
+	bottom:0;
+	/*background:url(images/timeline.png); */
+	z-index:9;
+	border-radius:12px;  }
+	
+	
+	
+	
+/* Preview and Next buttons */
+.ice-slideshow-default .ice-buttons-control{
+	opacity:0;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0); /* IE6/IE7/8 */ 
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*  IE8 */ 
+	-moz-transition: all .4s ease-out;
+	-o-transition: all .4s ease-out;
+	-webkit-transition:all .4s ease-out;
+	transition: all .4s ease-out;
+	display:none;
+	}
+
+	.ice-slideshow-default .ice-next, 
+	.ice-slideshow-default .ice-previous {
+		position:absolute;
+		background:url(images/arrows.png) no-repeat; 
+		z-index:9;
+		top:42%;
+		width:40px;
+		cursor:pointer;
+		height:40px;	
+		display:block;
+		text-indent:-999999px;
+		overflow:hidden;}
+		
+			
+		.ice-slideshow-default .ice-previous {	
+			background-position:0 0;
+			left:5px}
+			.ice-slideshow-default .ice-previous:hover { 
+				background-position: 0 -80px;}
+			
+		.ice-slideshow-default .ice-next {
+			left:auto;
+			right:5px;
+			background-position: 0 -40px;}
+			.ice-slideshow-default .ice-next:hover {
+				background-position: 0 -120px;}
+				
+		
+		.ice-main-wapper:hover .ice-buttons-control{
+			opacity:1;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100); /* IE6/IE7/8 */ 
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=100)"; /*  IE8 */ 
+	display:block;
+			}		
+			
+						
+
+
+/* Fix default joomla tool tip */
+.tip-wrap{z-index:9999999!important;}
+
+.dcl_new{
+	top:20px;
+	left:48%;}

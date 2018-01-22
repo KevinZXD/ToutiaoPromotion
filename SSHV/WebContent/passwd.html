@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://www.js-css.cn/divcss/login/login4/ -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>找回密码</title>
+<link rel="shortcut icon" href="./img/zxd.ico">
+<link href="./login_register_css_js/style.css" rel="stylesheet"
+	type="text/css">
+<script type="text/javascript" src="./login_register_css_js/jquery.js"></script>
+<script type="text/javascript"
+	src="./login_register_css_js/jquery.i18n.properties-1.0.9.js"></script>
+<script type="text/javascript"
+	src="./login_register_css_js/jquery-ui-1.10.3.custom.js"></script>
+<script type="text/javascript"
+	src="./login_register_css_js/jquery.validate.js"></script>
+<script type="text/javascript" src="./login_register_css_js/md5.js"></script>
+<script type="text/javascript" src="./login_register_css_js/pass_modify.js"></script>
+
+</head>
+<body class="loginbody">
+	
+		<div class="loginbox registbox">
+
+			<div class="login-content reg-content">
+				<div class="loginbox-title">
+					<h3>找回密码</h3>
+				</div>
+				<form id="signupForm" novalidate="novalidate">
+					<div class="login-error" style="display: none;"></div>
+					<div class="row">
+						<label class="field" for="email">请输入您注册时的邮箱</label> <input
+							type="text" value="" class="input-text-user noPic input-click"
+							name="email" id="email">
+					</div>
+					<div class="row">
+						<label class="field" for="password">请输入您注册时的密保码</label> <input
+							type="password" value=""
+							class="input-text-password noPic input-click" name="password"
+							id="password">
+					</div>
+					<div class="row">
+						<label class="field" for="passwordAgain">请再次输入您注册时的密保码</label> <input
+							type="password" value=""
+							class="input-text-password noPic input-click"
+							name="passwordAgain" id="passwordAgain">
+					</div>
+					<div class="row">
+						<label class="field" for="contact">用户名（英文名）</label> <input type="text"
+							value="" class="input-text-user noPic input-click" name="contact"
+							id="contact">
+					</div>
+					<div class="row">
+						<label class="field" for="newpasswd">请输入你的新密码</label> <input
+							type="text" value="" class="input-text-user noPic input-click"
+							name="newpasswd" id="newpasswd">
+					</div>
+					<div class="row">
+						<label class="field" for="newpasswdagain">请再次输入你的新密码</label> <input
+							type="text" value="" class="input-text-user noPic input-click"
+							name="newpasswdagain" id="newpasswdagain">
+					</div>
+					<div class="row tips">
+						<input type="checkBox" id="checkBox"> <label>
+							我已阅读并同意 <a href="text/Notice.html" target="_blank">隐私政策、服务条款</a>
+						</label>
+					</div>
+					<div class="row btnArea">
+						<a class="login-btn" id="submit">修改</a>
+					</div>
+				</form>
+
+			</div>
+
+		</div>
+		<div class="loading" style="display: none;">
+			<div class="mask">
+				<div class="loading-img">
+					<img src="./login_register_css_js/loading.gif" width="31"
+						height="31">
+				</div>
+			</div>
+		</div>
+		
+</body>
+</html>

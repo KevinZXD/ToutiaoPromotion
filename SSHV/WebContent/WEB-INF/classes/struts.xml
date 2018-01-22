@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.devMode" value="false" />
+
+	<package name="jsonAction" extends="json-default">
+		<action name="getQuestionsAnswers" class="cn.wit.shortvideos.actions.QuestionSolution"
+			method="getQuestionAnswersByQid">
+		</action>
+		<action name="insertQuestionsAnswers" class="cn.wit.shortvideos.actions.QuestionSolution"
+			method="insertQuestionAnswers">
+		</action>
+
+		<action name="getVideos" class="cn.wit.shortvideos.actions.getVideosAction"
+			method="execute">
+		</action>
+		<action name="getNews" class="cn.wit.shortvideos.actions.GetTopNews"
+			method="getTopNews">
+		</action>
+		<action name="getImages" class="cn.wit.shortvideos.actions.GetImages"
+			method="getTopImages">
+		</action>
+		<action name="loginAction" class="cn.wit.shortvideos.actions.UserValidationAction"
+			method="loginU">
+		</action>
+			<action name="passmodifyAction" class="cn.wit.shortvideos.actions.UserValidationAction"
+			method="modifyU">
+		</action>
+		<action name="getusersAction" class="cn.wit.shortvideos.actions.UserValidationAction"
+			method="getU">
+		</action>
+		<action name="getusersPromotionAction" class="cn.wit.shortvideos.actions.UserPromotionList"
+			method="execute">
+		</action>
+		<action name="getUserInterest" class="cn.wit.shortvideos.actions.UserPromotionList"
+			method="getUserInterest">
+		</action>
+			<action name="registerAction" class="cn.wit.shortvideos.actions.UserValidationAction"
+			method="registerU">
+		</action>
+		<action name="getTags" class="cn.wit.shortvideos.actions.UserPromotionList"
+			method="getTags">
+		</action>
+		<action name="insertAdvice" class="cn.wit.shortvideos.actions.InsertFeedBack"
+			method="execute">
+		</action>
+			<action name="getFeedback" class="cn.wit.shortvideos.actions.InsertFeedBack"
+			method="getFeedBack">
+		</action>
+		
+		
+		<action name="getVideosComments"
+			class="cn.wit.shortvideos.actions.getVideosCommentAction" method="execute"></action>
+		<action name="insertComment" class="cn.wit.shortvideos.actions.InsertContentAction"
+method="execute">
+		</action>
+		<action name="searchByTitle" class="cn.wit.shortvideos.actions.getVideosBySearchAction" method="execute">
+		</action>
+
+	</package>
+</struts>

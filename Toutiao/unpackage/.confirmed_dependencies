@@ -1,0 +1,232 @@
+{
+  "main.html": {
+    "refer": [
+      "setting.html",
+      "chat.html",
+      "index.html",
+      "feedback.html",
+      "list-to-detail/listview.html",
+      "list-to-detail/detail.html",
+      "login.html",
+      "question.html",
+      "q1.html",
+      "outer.html"
+    ],
+    "resources": [
+      "css/mui.min.css",
+      "css/ionic.css",
+      "js/jquery-3.2.1.min.js",
+      "js/ionic.bundle.min.js",
+      "js/ajaxdemo.js",
+      "images/person.png",
+      "js/mui.min.js",
+      "js/app.js",
+      "js/news_images.js",
+      "js/content.js",
+      "images/toutiao.png",
+      "share/sinaweiboshare.png",
+      "share/qqzoneshare.png",
+      "share/wechatshare.png",
+      "share/qqshare.png",
+      "share/share.css",
+      "share/share.js"
+    ]
+  },
+  "login.html": {
+    "refer": [
+      "main.html",
+      "reg.html",
+      "forget_password.html",
+      "unlock.html",
+      "login.html"
+    ],
+    "resources": [
+      "css/mui.min.css",
+      "css/style.css",
+      "js/jquery-3.2.1.min.js",
+      "js/mui.min.js",
+      "js/mui.enterfocus.js",
+      "js/user.js",
+      "js/app.js",
+      "images/loading.gif",
+      "images/waiting.png"
+    ]
+  },
+  "list.html": {
+    "refer": [
+      "examples/ajaxlist.html"
+    ],
+    "resources": []
+  },
+  "examples/ajaxlist.html": {
+    "refer": [
+      "list.html"
+    ],
+    "resources": []
+  },
+  "reg.html": {
+    "refer": [
+      "main.html",
+      "login.html",
+      "question.html",
+      "feedback.html"
+    ],
+    "resources": [
+      "css/mui.min.css",
+      "css/style.css",
+      "js/jquery-3.2.1.min.js",
+      "js/user.js",
+      "js/mui.min.js",
+      "js/app.js",
+      "images/loading.gif"
+    ]
+  },
+  "setting.html": {
+    "href": "setting.html",
+    "resources": [
+      "js/mui.min.js",
+      "js/mui.view.js",
+      "libs/easymob-webim-sdk/jquery-1.11.1.js",
+      "libs/easymob-webim-sdk/strophe-custom-2.0.0.js",
+      "libs/easymob-webim-sdk/json2.js",
+      "libs/easymob-webim-sdk/easemob.im-1.0.5.js",
+      "js/feedback.js",
+      "js/feedback-page.js",
+      "js/mui.locker.js",
+      "js/app.js",
+      "css/mui.min.css",
+      "css/feedback-page.css",
+      "js/user.js"
+    ],
+    "refer": [
+      "login.html",
+      "main.html"
+    ],
+    "priority": 0
+  },
+  "forget_password.html": {
+    "href": "forget_password.html",
+    "resources": [
+      "css/mui.min.css",
+      "css/style.css",
+      "js/mui.min.js",
+      "js/app.js"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "unlock.html": {
+    "href": "unlock.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "js/mui.locker.js",
+      "js/app.js"
+    ],
+    "refer": [
+      "login.html",
+      "main.html"
+    ],
+    "priority": 0
+  },
+  "index.html": {
+    "refer": [
+      "chat.html",
+      "im-chat.html"
+    ],
+    "resources": []
+  },
+  "chat.html": {
+    "refer": [
+      "main.html"
+    ],
+    "resources": [
+      "css/mui.min.css",
+      "css/app.css",
+      "css/mui.imageviewer.css",
+      "images/person.png",
+      "js/mui.min.js",
+      "js/mui.imageViewer.js",
+      "js/arttmpl.js"
+    ]
+  },
+  "feedback.html": {
+    "resources": [
+      "css/feedback.css",
+      "css/mui.min.css",
+      "js/jquery-3.2.1.min.js",
+      "question/subquestion.js",
+      "js/mui.min.js"
+    ],
+    "refer": [
+      "main.html",
+      "reg.html",
+      "question.html",
+      "login.html"
+    ]
+  },
+  "list-to-detail/listview.html": {
+    "refer": [
+      "list-to-detail/detail.html",
+      "main.html"
+    ],
+    "resources": [
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "list-to-detail/vue.min.js"
+    ]
+  },
+  "question.html": {
+    "refer": [
+      "main.html",
+      "reg.html",
+      "feedback.html",
+      "outer.html"
+    ],
+    "resources": [
+      "css/ionic.css",
+      "js/jquery-3.2.1.min.js",
+      "js/ionic.bundle.min.js",
+      "question/questionanswer.js",
+      "images/toutiao.png",
+      "question/getanswers.js",
+      "images/person.png",
+      "js/angular-ui/angular-ui-router.js",
+      "css/mui.min.css",
+      "share/share.css",
+      "share/share.js",
+      "js/content.js"
+    ]
+  },
+  "list-to-detail/detail.html": {
+    "href": "list-to-detail/detail.html",
+    "resources": [
+      "css/mui.min.css",
+      "list-to-detail/list-to-detail.css",
+      "js/mui.min.js",
+      "list-to-detail/vue.min.js"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "q1.html": {
+    "refer": [
+      "main.html",
+      "feedback.html"
+    ],
+    "resources": [
+      "main.html"
+    ]
+  },
+  "outer.html": {
+    "refer": [
+      "main.html",
+      "question.html"
+    ],
+    "resources": [
+      "css/mui.min.css",
+      "js/jquery-3.2.1.min.js",
+      "js/outer.js"
+    ]
+  }
+}

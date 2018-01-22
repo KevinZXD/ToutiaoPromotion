@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=yes" />
+		<title></title>
+		<script>   
+(function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if(clientWidth>=640){
+                    docEl.style.fontSize = '100px';
+                }else{
+                    docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                }
+            };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="share/share.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/ionic.css" />
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/ionic.bundle.min.js"></script>
+		<script src="js/ajaxdemo.js"></script>
+		<script src="js/news_images.js"></script>
+		<script src="share/share.js"></script>
+
+		<script type="text/javascript">
+			angular.module('starter', ['ionic'])
+
+				.run(function($ionicPlatform) {
+					$ionicPlatform.ready(function() {
+						if(window.cordova && window.cordova.plugins.Keyboard) {
+							cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+						}
+						if(window.StatusBar) {
+							StatusBar.styleDefault();
+						}
+					});
+				})
+
+				.controller('actionsheetCtl', ['$scope', '$timeout', '$http', function($scope, $timeout, $http) {
+					$scope.doRefresh = function() {
+						if(sessionStorage.flag == 1) {
+							getList();
+						} else if(sessionStorage.flag == 2) {
+							getNews();
+						} else {
+							getImages();
+						}
+					};
+				}])
+		</script>
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav" style="padding-right: 15px;">
+			<h1 class="mui-title">头条短视频推荐系统</h1>
+
+			<a id='setting' class=" mui-pull-right mui-btn-link" href="setting.html">设置</a>
+			<div class="mui-content-padded">
+				<label id="user_id" hidden="true">1001</label>
+				<label id="user_name" hidden="true">kevin</label>
+				<p>
+					您好 <span id='account'></span>,
+				</p>
+
+			</div>
+			<div class="bar" style="margin-top: 50px;">
+				<div class="tabs">
+					<a class="tab-item" href="#" onclick="getList()">
+						推荐
+					</a>
+					<a class="tab-item" href="#" onclick="getNews()">
+						政治热点
+					</a>
+					<a class="tab-item" href="#" onclick="getImages()">
+						美图 </a>
+					<a class="tab-item" href="question.html">
+						问答 </a>
+					<a class="tab-item" href="list-to-detail/listview.html">
+						今日资讯 </a>
+					<a class="tab-item" href="chat.html">头条小管家</a>
+
+				</div>
+
+			</div>
+			<div class="bar bar-header item-input-inset">
+				<label class="item-input-wrapper">
+        <i class="icon ion-ios-search placeholder-icon"></i>
+        <input type="search" id="sea"  placeholder="搜索">
+      </label>
+				<label class="button button-positive" onclick="getSearchList()">检索</label>
+			</div>
+		</header>
+
+		<div ng-app="starter" ng-controller="actionsheetCtl">
+
+			<ion-pane>
+
+				<ion-content>
+
+					<ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()"></ion-refresher>
+					<ion-list>
+						<ion-item ng-repeat="item in items" ng-bind="item.name"></ion-item>
+						<div class="mui-content">
+
+							<div id="content" style="margin-top: 100px;"></div>
+
+						</div>
+					</ion-list>
+				</ion-content>
+			</ion-pane>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/content.js"></script>
+		<script>
+			(function($, doc) {
+				$.init();
+				var settings = app.getSettings();
+				var account = doc.getElementById('account');
+				//
+				window.addEventListener('show', function() {
+					var state = app.getState();
+					account.innerText = state.account;
+				}, false);
+				$.plusReady(function() {
+
+					var settingPage = $.preload({
+						"id": 'setting',
+						"url": 'setting.html'
+					});
+					//设置
+					var settingButton = doc.getElementById('setting');
+					//settingButton.style.display = settings.autoLogin ? 'block' : 'none';
+					settingButton.addEventListener('tap', function(event) {
+						$.openWindow({
+							id: 'setting',
+							show: {
+								aniShow: 'pop-in'
+							},
+							styles: {
+								popGesture: 'hide'
+							},
+							waiting: {
+								autoShow: false
+							}
+						});
+					});
+					//--
+					$.oldBack = mui.back;
+					var backButtonPress = 0;
+					$.back = function(event) {
+						backButtonPress++;
+						if(backButtonPress > 1) {
+
+							plus.runtime.quit();
+						} else {
+
+							plus.nativeUI.toast('再按一次退出应用');
+						}
+						setTimeout(function() {
+							backButtonPress = 0;
+
+						}, 1000);
+						return false;
+					};
+				});
+			}(mui, document));
+		</script>
+	</body>
+
+</html>

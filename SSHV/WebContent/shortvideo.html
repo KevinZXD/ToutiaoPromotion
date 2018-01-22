@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/Jquery.Query.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/search.js"></script>
+<script src="js/index.js"></script>
+
+
+</head>
+
+<body>
+
+	<div class="container" id="allbody">
+	<div class="panel-heading">
+							尊敬的用户  <span id="adminName" style="font-weight: bold;"></span> 欢迎来到头条推荐系统
+						</div>
+						<label id='user_id' hidden=true></label>
+						<label id='user_name' hidden=true></label>
+						
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<nav class="navbar navbar-default" role="navigation">
+					<div class="navbar-header">
+						<button class="navbar-toggle" type="button" data-toggle="collapse"
+							data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span><span
+								class="icon-bar"></span><span class="icon-bar"></span><span
+								class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" >头条</a>
+					</div>
+
+					<div class="collapse navbar-collapse"
+						id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="topnews.html" >今日资讯</a></li>
+							<li><a href="images.html">今日美图</a></li>
+						</ul>
+						<form class="navbar-form navbar-left" >
+							<div class="form-group">
+								<input id="searchkeyword" class="form-control" type="text" style="width:300px" />
+							</div>
+							<!-- 好不容易看出来，这里原先超链接引发雪崩式错误 -->
+							<label class="btn btn-default" id="sear">搜索</label>
+							<label class="btn btn-default" id="promotion">推荐</label>
+							<label class="btn btn-default" data-toggle="modal"
+									data-target="#myModal2" id="ques">提问</label>
+							<label class="btn btn-default" id="answer">问答</label>
+							<label class="btn btn-default" ><a href="musicsearch.html">音乐</a></label>
+							<label class="btn btn-default" ><a href="apk/toutiaoandroid.apk">安卓客户端</a></label>
+							<label class="btn btn-default" ><a href="apk/toutiaoios.apk">IOS客户端</a></label>
+						</form>
+						<ul class="nav navbar-nav navbar-right">
+							<div id="login" style="float: left;margin:15px" ><li><a href="login.html" >登陆</a></li></div>
+							
+							
+							
+							
+					<div id="submit_review" style="float: left;">
+
+								<!-- 按钮触发模态框 -->
+								<button class="btn btn-primary btn-lg" data-toggle="modal"
+									data-target="#myModal1" id="writecomment">欢迎吐槽我们的产品经理</button>
+								<!-- 模态框（Modal） -->
+								<div class="modal fade" id="myModal1" tabindex="-1"
+									role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"
+													aria-hidden="true">&times;</button>
+												<h4 id="subitem1" class="modal-title" id="myModalLabel">用户反馈</h4>
+											</div>
+											<label id="video_id" hidden="true"></label> 
+										
+											<div class="modal-body">请填写你的意见反馈</div>
+											<textarea id="cont" class="form-control" rows="3"></textarea>
+											<label class="modal-body">请填写你的联系方式</label>
+											<input id="tele" class="form-control" rows="3"></input>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default"
+													data-dismiss="modal">关闭</button>
+												<button type="button" class="btn btn-primary" id="feedback">提交反馈</button>
+											</div>
+											<div id="myAlert1" class="alert alert-success" hidden="true">
+												<a href="#" class="close" data-dismiss="alert">&times;</a> <strong>成功！</strong>感谢您的反馈。
+											</div>
+											<div id="myAlert2" class="alert alert-warning" hidden="true">
+												<a href="#" class="close" data-dismiss="alert">&times;</a> <strong>错误！</strong>你提交的反馈有问题！未成功提交该反馈。
+											</div>
+
+									
+										</div>
+										<!-- /.modal-content -->
+										
+										<!-- 模态框（Modal） -->
+								
+										<!-- /.modal-content -->
+									</div>
+										
+							</div>
+									<!-- /.modal -->
+
+						</div>
+						
+						
+						
+						<div id="submit" style="float: left;">
+
+								<!-- 按钮触发模态框 -->
+								<!-- 模态框（Modal） -->
+								<div class="modal fade" id="myModal2" tabindex="-1"
+									role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"
+													aria-hidden="true">&times;</button>
+												<h4 id="subitem1" class="modal-title" id="myModalLabel">用户问答</h4>
+											</div>
+											
+											<div class="modal-body">请详细填写你的问题</div>
+											<textarea id="question" class="form-control" rows="3"></textarea>
+											<label class="modal-body">请填写你的联系方式以便网友回答后及时推送给你</label>
+											<input id="tel" class="form-control" rows="3"></input>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default"
+													data-dismiss="modal">关闭</button>
+												<button type="button" class="btn btn-primary" id="subquestion" >提交问答</button>
+											</div>
+											<div id="myAlert3" class="alert alert-success" hidden="true">
+												<a href="#" class="close" data-dismiss="alert">&times;</a> <strong>成功！</strong>感谢您的问答。
+											</div>
+											<div id="myAlert4" class="alert alert-warning" hidden="true">
+												<a href="#" class="close" data-dismiss="alert">&times;</a> <strong>错误！</strong>你提交的问答有问题！未成功提交该问答。
+											</div>
+
+									
+										</div>
+										<!-- /.modal-content -->
+										
+										<!-- 模态框（Modal） -->
+								
+										<!-- /.modal-content -->
+									</div>
+										
+							</div>
+									<!-- /.modal -->
+
+						</div>
+							
+							
+						</ul>
+					</div>
+
+				</nav>
+				<div class="carousel slide" id="carousel-43382">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-43382" data-slide-to="0"></li>
+						<li data-target="#carousel-43382" data-slide-to="1"></li>
+						<li class="active" data-target="#carousel-43382" data-slide-to="2">
+						</li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item">
+							<img alt="" src="img/default.jpg" />
+							<div class="carousel-caption">
+								<h4>坚持</h4>
+								
+							</div>
+						</div>
+						<div class="item">
+							<img alt="" src="img/1.jpg" />
+							<div class="carousel-caption">
+								<h4>挑战</h4>
+								
+							</div>
+						</div>
+						<div class="item active">
+							<img alt="" src="img/default2.jpg" />
+							<div class="carousel-caption">
+								<h4>奔跑</h4>
+								
+							</div>
+						</div>
+					</div>
+					<label class="left carousel-control" href="#carousel-43382"
+						data-slide="prev"><span
+						class="glyphicon glyphicon-chevron-left"></span></label> <label
+						class="right carousel-control" href="#carousel-43382"
+						data-slide="next"><span
+						class="glyphicon glyphicon-chevron-right"></span></label>
+				</div>
+			</div>
+		</div>
+		<div class="row clearfix" id="show"></div>
+		<div id="page">
+			<ul class="pager">
+				<li class="previous"><span id="fresh" style="cursor:pointer">&larr;
+						换一批新的视频内容</span></li>
+
+			</ul>
+		</div>
+	</div>
+	
+	
+	
+				
+</body>
+
+</html>

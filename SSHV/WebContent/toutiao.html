@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/video.css" />
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/Jquery.Query.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/content.js"></script>
+</head>
+
+<body>
+	<div id="main" style="margin-top: 20px; width: 700; height: 300px;">
+		<div class="row" style="width: 700px; height: 400;">
+			<div class="col-sm-6 col-md-3"
+				style="width: 700px; height: 450px; margin: 5px;">
+				<div class="thumbnail">
+					<h3 id="videotitle"></h3>
+					<div style="background-color: #888888;">
+						<video id="myvideo" controls='controls' preload='none' src=""
+							poster=""></video>
+
+
+						<div class="caption">
+
+							<div id="submit_review1" style="float: left;">
+
+								<!-- 按钮触发模态框 -->
+								<button id="getcom" class="btn btn-primary btn-lg"
+									data-toggle="modal" data-target="#myModal">查看评论</button>
+								<!-- 模态框（Modal） -->
+								<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+									aria-labelledby="myModalLabel" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+
+											<div class="list-group" >
+												<a href="#" class="list-group-item active">
+													<h4 id="subitem" class="list-group-item-heading">视频名称
+														点击量 把视频链接搞到这来</h4>
+												</a>
+												<video id="myvideo1" controls='controls' preload='none'
+													src="" poster=""></video>
+												<div id="group_diss"></div>
+											</div>
+										</div>
+										<div id="myAlert3" class="alert alert-success" hidden="true">
+											<a href="#" class="close" data-dismiss="alert">&times;</a> <strong>还没有人发表过评论哦！</strong>您是第一个。
+										</div>
+
+										<!-- /.modal-content -->
+									</div>
+									<!-- /.modal -->
+								</div>
+							</div>
+
+							<div id="submit_review" style="float: left;">
+
+								<!-- 按钮触发模态框 -->
+								<button class="btn btn-primary btn-lg" data-toggle="modal"
+									data-target="#myModal1" id="writecomment">写评论</button>
+								<!-- 模态框（Modal） -->
+								<div class="modal fade" id="myModal1" tabindex="-1"
+									role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"
+													aria-hidden="true">&times;</button>
+												<h4 id="subitem1" class="modal-title" id="myModalLabel">用户所阅读的视频标题</h4>
+											</div>
+											<label id="video_id" hidden="true"></label> <label
+												id="user_name" hidden="false"></label> <label
+												id="user_id" hidden="true"></label>
+											<div class="modal-body">请填写你的评论内容</div>
+											<textarea id="cont" class="form-control" rows="3"></textarea>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default"
+													data-dismiss="modal">关闭</button>
+												<button type="button" class="btn btn-primary" id="sub">提交评论</button>
+											</div>
+											<div id="myAlert1" class="alert alert-success" hidden="true">
+												<a href="#" class="close" data-dismiss="alert">&times;</a> <strong>成功！</strong>您已发布该评论。
+											</div>
+											<div id="myAlert2" class="alert alert-warning" hidden="true">
+												<a href="#" class="close" data-dismiss="alert">&times;</a> <strong>错误！</strong>您未成功发布该报告。
+											</div>
+
+
+										</div>
+										<!-- /.modal-content -->
+									</div>
+									<!-- /.modal -->
+
+								</div>
+								<div id="page">
+									<ul class="pager">
+										<li class="previous"><a href="video.html">&larr;
+												返回主界面</a></li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function() {
+				$(".close").click(function() {
+					$(".alert").alert('close');
+				});
+			});
+		</script>
+</body>
+
+</html>

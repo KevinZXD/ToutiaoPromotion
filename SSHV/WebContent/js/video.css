@@ -1,0 +1,45 @@
+body{
+	background:#999;
+	
+}
+#content{
+	margin-top:0px;
+	margin-left:auto;
+	margin-right:auto;
+	width:600px;
+	height:2100px;
+	background:#FFF;
+	
+	
+}
+video{
+	width:600px;
+	height:300px;
+	background:#666;
+}
+li{margin-top:10px;
+	text-decoration:none;
+	text-align:center;
+	list-style-type:none;
+	font-style:normal;
+	font-size:20px;
+	margin-bottom:10px;
+}
+#refresh1{
+	position:absolute;
+	margin-top:200px;
+	width:200px;
+	height:200px;
+	font-size:30px;
+	border-radius:30px;
+}
+#refresh2{
+	position:absolute;
+	right:20px;
+	top:1500px;
+	
+	width:200px;
+	height:200px;
+	font-size:50px;
+	border-radius:30px;
+}

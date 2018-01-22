@@ -1,0 +1,85 @@
+/* slider */
+.index_post {margin:0 0 30px 0; padding:0;}
+#slider-wrapper {position:relative; z-index:1;}
+.slider_border {width:980px; height:303px; position:absolute; top: 0px; left:0px; z-index:51;}
+#slider {position:relative; width:972px; height:300px; background:url(loading.gif) no-repeat 50% 50%; border:4px solid #EDECD9; box-shadow:0 3px 4px rgba(0,0,0,0.25); margin:auto;}
+#slider img {position:absolute; top: 0px; left:0px; display: none; width:678px !important; height:250px;}
+#slider a {border:0; display:block;}
+.nivoSlider {position:relative;}
+.nivoSlider img {position:absolute; top:0px; left:0px;}
+.nivoSlider a.nivo-imageLink {position:absolute; top:0px; left:0px; width:100%; height:100%; border:0; padding:0; margin:0; z-index:60; display:none;}
+.nivo-slice {display:block; position:absolute; z-index: 50; height: 100%;}
+.nivo-box {display:block; position:absolute; z-index: 5;}
+.nivo-caption {position:absolute; left:20px; bottom:20px; background:#3599BA; text-shadow:none; color:#FFF; opacity: 0.5; z-index:89; padding:10px;}
+.nivo-caption p {line-height:17px; font-size:15px; text-shadow:1px 1px 3px rgba(0,0,0,0.5);}
+.nivo-caption p::selection {background: #fff; color: #000;}
+.nivo-caption p::-moz-selection {background: #fff; color: #000;}
+.nivo-caption a {display: inline !important;}
+.nivo-html-caption {display: none;}
+.nivo-directionNav a {position:absolute; top:50%; margin-top:-40px; z-index:99; cursor:pointer; display:block; text-indent:-9999em; width:40px; height:80px;}
+a.nivo-prevNav {left:-4px; background:url(../index_img/slider_previous.png) no-repeat;}
+a.nivo-nextNav {right:-4px; background: url(../index_img/slider_next.png) no-repeat;}
+#slider .nivo-controlNav {position:absolute; bottom:-40px; text-align:center; z-index: 999; width:100%;}
+#slider .nivo-controlNav a {z-index:999; display:inline-block; cursor:pointer; width:30px; height:5px; margin:0 3px; background-color:#f3efe9; border:1px solid #d3d1a5; text-indent: -9999em;}
+#slider .nivo-controlNav a.active {font-weight: bold; background-color:#3599BA; border:1px solid #edecd9; }
+
+
+
+
+
+
+/*=======新增样式==========*/
+.m-30{
+	margin:30px;}
+.tableA {
+	margin:30px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.table th,
+.table td {
+  padding: 8px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align:middle;
+  vertical-align: top;
+  border: 1px solid #dddddd;
+}
+
+.table th {
+  font-weight: bold;
+}
+
+.table thead th {
+  vertical-align: bottom;
+}
+
+.tableA caption + thead tr:first-child th,
+.tableA caption + thead tr:first-child td,
+.tableA colgroup + thead tr:first-child th,
+.tableA colgroup + thead tr:first-child td,
+.tableA thead:first-child tr:first-child th,
+.tableA thead:first-child tr:first-child td {
+  border-top: 0;
+}
+
+.table tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+
+.table .table {
+  background-color: #ffffff;
+}
+
+.form-actionsA {
+  padding: 19px 20px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #e5e5e5;
+}
+.controlsA
+{
+    font-size:16px;
+    line-height:32px;
+    }

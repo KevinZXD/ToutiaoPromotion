@@ -1,0 +1,12 @@
+{
+  "question.html": {
+    "href": "question.html",
+    "resources": [
+      "share/share.css",
+      "share/share.js",
+      "js/content.js"
+    ],
+    "refer": [],
+    "priority": 3
+  }
+}

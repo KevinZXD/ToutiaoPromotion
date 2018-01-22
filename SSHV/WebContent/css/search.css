@@ -1,0 +1,41 @@
+ body{	background-repeat:round}
+ a{
+			text-decoration:none;
+		}
+		#keywords{
+			width: 500px;
+			height: 50px;
+			font-size: 30px;
+			left:342px;
+			position:absolute;
+		}
+		#search{
+	height: 50px;
+	margin-right: px;
+	font-size: 30px;
+	position: absolute;
+	left: 846px;
+	top: 8px;
+		}
+		#message_area{
+			width: 500px;
+			border: 2px;
+			border-color:#CCC;
+			border-style: solid;
+			margin-left:-147px;
+			margin-top:50px;
+			display:none;
+			left:490px;
+			position:absolute;
+			z-index:1;
+		}
+		#message_area ul{
+			font-size: 20px;
+			list-style:none;
+		    margin:0px;
+			border-color:#CCC;
+			border:0px solid #000;
+		}	
+		 #player{width:400px;height:400px;position:relative;
+ display:none;
+ }

@@ -1,0 +1,12 @@
+.fl{
+			float:left;
+		}
+		
+	/*<div id="share">
+				<div class="fl"><strong>分享到：</strong></div>
+				<div class="fl" onclick="shareTo('qzone','测试已发','http://mvideo.spriteapp.cn/video/2017/0502/da575fa0-2f1a-11e7-a836-1866daeb0df1_wpcco.mp4')"><img src="share/qqzoneshare.png" width="30"></div>
+				<div class="fl" onclick="shareTo('qq','测试已发','http://mvideo.spriteapp.cn/video/2017/0502/da575fa0-2f1a-11e7-a836-1866daeb0df1_wpcco.mp4')"><img src="share/qqshare.png" width="32"></div>
+				<div class="fl" onclick="shareTo('sina','测试已发','http://mvideo.spriteapp.cn/video/2017/0502/da575fa0-2f1a-11e7-a836-1866daeb0df1_wpcco.mp4')"><img src="share/sinaweiboshare.png" width="36"></div>
+				<div class="fl" onclick="shareTo('wechat','测试已发','http://mvideo.spriteapp.cn/video/2017/0502/da575fa0-2f1a-11e7-a836-1866daeb0df1_wpcco.mp4')"><img src="share/wechatshare.png" width="32"></div>
+				
+			</div>*/
